@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TouchSlide 触屏滑动特效插件 </title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="window-target" content="_top" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<meta name="HandheldFriendly" content="true" />
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+	<meta content="telephone=no" name="format-detection" />
+	<meta content="email=no" name="format-detection" />
+	<link rel="stylesheet" href="css/style.css" />
+	<script type="text/javascript" src="js/angular.min.js"></script>
+</head>
+
+<body ng-app="swipe">
+<header class="pt10">
+<h2>header</h2>
+</header>
+	<div id="content" class="wrapper"ng-controller="swipeCtrl">
+	  <div id="TabBox" class="tabBox">
+		<div class="bd">
+			<!--首页页面-->
+		<ul>
+			<li>
+				<div id="focus" class="focus">
+					<div class="circle">
+						<ul></ul>
+					</div>
+				<div class="imgsilde">
+					<ul>
+						<li><a href="#"><img _src="images/m1.jpg" src="images/blank.png" /></a></li>
+						<li><a href="#"><img _src="images/m2.jpg" src="images/blank.png"/></a></li>
+						<li><a href="#"><img _src="images/m3.jpg" src="images/blank.png"/></a></li>
+					</ul>
+				</div>
+				</div>
+			</li>
+			<li class="thumbnail p5 lh33" ng-cloak>
+				<div class="pic"><img ng-src="images/{{wyNewPic}}" /></div>
+				<div class="con">
+					<a class="tit">{{title}}</a>
+					<p>{{conContent}}</p>
+				</div>
+			</li>
+			<li class="h33 lh33"><a href="#">台官员:将驱离进入钓岛大陆船</a></li>
+			<li class="h33 lh33"><a href="#">陈云长子吁学江泽民思想方法</a></li>
+			<li class="h33 lh33"><a href="#">央视批抗日剧目:比着俗争着二</a></li>
+			<li class="h33 lh33"><a href="#">网友:离3次结3次可避税国五条</a></li>
+			<li class="h33 lh33"><a href="#">足疗女子自称东北人引发血案</a></li>
+			<li class="h33 lh33"><a href="#">台官员:将驱离进入钓岛大陆船</a></li>
+		</ul>
+		<!--管理页面-->
+			<ul class="p10">
+				<li class="h33 lh33"><h1>管理中心</h1></li>
+				<li class="h95 lh33">
+					<ul class="row">
+						<li class="flex1 trade bg3">
+							<a href="#">交易管理</a>
+						</li>
+						<li class="flex1 logistics bg4">
+							<a href="#">物流管理</a>
+						</li>
+					</ul>
+				</li>
+				
+				<li class="h95 lh33">
+					<ul class="row">
+						<li class="flex1 commodity bg1">
+							<a href="#">商品管理</a>
+						</li>
+						<li class="flex1 marketing bg2">
+							<a href="#">营销管理</a>
+						</li>
+					</ul>
+				</li>
+				
+				<li class="business lh33 bg5">
+					<a href="#">商户管理</a>
+				</li>
+			</ul>
+			<!--新闻页面-->
+			<ul class="p5">
+				<li id="contentleft">
+				<div id="leftTabBox" class="lefttabBox">
+					<div class="lefttabhd">
+						<ul>
+							<li><a href="#">国内</a></li>
+							<li><a href="#">国际</a></li>
+							<li><a href="#">时事</a></li>
+						</ul>
+					</div>
+					<div class="lefttabbd">
+						<ul>
+							<li><a href="#">官方明确感染H7N9高危人群</a></li>
+							<li><a href="#">台官员:将驱离进入钓岛大陆船</a></li>
+							<li><a href="#">陈云长子吁学江泽民思想方法</a></li>
+							<li><a href="#">央视批抗日剧目:比着俗争着二</a></li>
+							<li><a href="#">网友:离3次结3次可避税国五条</a></li>
+							<li><a href="#">足疗女子自称东北人引发血案</a></li>
+							<li><a href="#">男性神秘“根浴”会所被调查</a></li>
+							<li><a href="#">女孩一年吃掉48公里长方便面</a></li>
+						</ul>
+						<ul>
+							<li><a href="#">日:沈阳军区部队开赴中朝边境</a></li>
+							<li><a href="#">印度核潜艇经我周边未被发现</a></li>
+							<li><a href="#">中国航母战斗群重防空轻反潜</a></li>
+							<li><a href="#">日本军车爆车胎造成一死一伤</a></li>
+							<li><a href="#">韩媒称朝鲜导弹反复出仓回仓</a></li>
+							<li><a href="#">美国空军因缺钱大量战机停飞</a></li>
+							<li><a href="#">外媒:中国神盾舰多处落后日本</a></li>
+							<li><a href="#">朝鲜东部海岸遍布导弹发射场</a></li>
+						</ul>
+						<ul>
+							<li><a href="#">农业占GDP低政府支持力度大</a></li>
+							<li><a href="#">林志玲:至今珍藏本山送的手绢</a></li>
+							<li><a href="#">五粮液高管年薪超茅台近一倍</a></li>
+							<li><a href="#">视频:朝鲜导弹反复出舱</a></li>
+							<li><a href="#">《我是歌手》明晚决赛开战</a></li>
+							<li><a href="#">皖新传媒一年花13亿委托理财</a></li>
+							<li><a href="#">男子驾车在高速路遭飞石袭击</a></li>
+							<li><a href="#">东北低温寒冷程度历史罕见</a></li>
+						</ul>
+					</div>
+				</div>
+				
+				</li>
+			</ul>
+			<!--购物车页面-->
+			<ul class="p5">
+				<li class="w30p wrap">
+					<img src="img/p03.png"width="90"/>
+				</li>
+				<li class="w70p wrap">
+					<div class="tal">
+						<span class="ml5 f10">订单号:20141016</span>
+						<span class="f10 dib fr mr5">2014.10.16.23:00</span>
+						<h5 class="ml5">THREE  纯植物温和卸妆油  200ML</h5>
+						
+						<span class="ml5 f14">共计:2件商品</span><br/>
+						<span class="ml5 f14">合计:￥80元</span>
+					</div>
+				</li>
+				<li>
+					<a href="#">
+						<section class="wrap grid" ng-controller="content" ng-cloak>
+						<section ng-repeat="item in items">
+							<h3 class="m10">{{item.phone}}</h3>
+							<ul>
+								<li class="wrap grid p10 b1">
+									<span class="dib fl">商品单价:</span>
+									<span class="dib fr">{{item.price}}元</span>
+								</li>
+								<li class="wrap grid p10 b1">
+									<span class="dib fl">商品数量:</span>
+									<ul class="number dib fr">
+										<li>
+											<img ng-src="img/{{item.delete}}" class="w20 vam" ng-click="deleteOne(item)" />
+										</li>
+										<li>
+											<span class="w50 tac mlr5">{{item.count}}</span>
+										</li>
+										<li>
+											<img ng-src="img/{{item.plus}}" class="w20 vam" ng-click="item.count = item.count + 1" />
+										</li>
+										<!--ng-init="count=2"-->
+									</ul>
+								</li>
+								<li class="wrap grid p10 b1">
+									<span class="dib fl">商品总价:</span>
+									<span class="dib fr"><b class="red">{{item.price*item.count}}</b>元</span>
+								</li>
+							</ul>
+						</section>
+					<p>总价:￥{{totalCart()}}</p>
+				</section>
+					</a>
+				</li>
+			</ul>
+			<!--个人中心页面-->
+			<ul class="rel">
+				<li>
+					<div class="w100p">
+						<div class="per">
+							<img src="img/p04.png"width="90" class="logo"/>
+							<img src="img/pp.png" class="fr mt10 mr10" width="60"/>
+							 <div class="content">
+								<p class="mb10">XX科技</p>
+								<span class="f12">可用积分:2000分</span>
+								<span class="f12">累计积分:2000分</span>
+								<div class="mt10">
+									<img src="img/pic24.png" width="60" class="mr15"/>
+									<img src="img/pic25.png" width="90"/>
+									<span class="lv8" style="">LV8</span>
+								</div>
+							</div>
+						</div>
+					  </div>
+				</li>
+				<li>
+					<ul class="wrap grid p5">
+						<li class="fl">
+							<img src="img/pic5.png"class="w20 vab"/><span>消费记录</span>
+						</li>
+						<li class="fr">
+							<span>9笔</span><img src="img/pic26.png"class="w10 vab"/>
+						</li>
+					</ul>
+					<ul class="wrap grid p5">
+						<li class="fl">
+							<img src="img/pic6.png"class="w20 vab"/><span>我的收藏</span>
+						</li>
+						<li class="fr">
+							<span>9笔</span><img src="img/pic26.png"class="w10 vab"/>
+						</li>
+					</ul>
+					<ul class="wrap grid p5">
+						<li class="fl">
+							<img src="img/pic7.png"class="w20 vab"/><span>账户安全</span>
+						</li>
+						<li class="fr">
+							<span>9笔</span><img src="img/pic26.png"class="w10 vab"/>
+						</li>
+					</ul>
+					<ul class="wrap grid p5">
+						<li class="fl">
+							<img src="img/pic8.png"class="w20 vab"/><span>信息通知</span>
+						</li>
+						<li class="fr">
+							<span>9笔</span><img src="img/pic26.png"class="w10 vab"/>
+						</li>
+					</ul>
+					
+				</li>
+			</ul>
+		</div>
+		<footer class="tac hd">
+			<ul class="row w100p">
+				<li class="flex1 w20p">
+				<a href="#">
+					<img src="img/homeC.png" class="icon"/>
+					<span>首页</span>
+				</a>
+				</li>
+				<li class="flex1 w20p">
+					<a href="#">
+						<img src="img/homeC.png" class="icon"/>
+						<span>管理</span>
+					</a>
+				</li>
+				<li class="flex1 w20p">
+					<a href="#">
+						<img src="img/homeC.png" class="icon"/>
+						<span>新闻</span>
+					</a>
+				</li>
+				<li class="flex1 w20p">
+					<a href="#">
+						<img src="img/homeC.png" class="icon"/>
+						<span>购物车</span>
+					</a>
+				</li>
+				<li class="flex1 w20p">
+					<a href="#">
+						<img src="img/homeC.png" class="icon"/>
+						<span>个人中心</span>
+					</a>
+				</li>
+			</ul>
+		</footer>
+	  </div>
+	</div>
+	<script src="js/TouchSlide.1.1.js"></script>
+	<script type="text/javascript">
+		TouchSlide({slideCell:"#TabBox" });
+		TouchSlide({slideCell:"#focus",titCell:".circle ul",mainCell:".imgsilde ul",effect:"left",autoPlay:true,autoPage:true,switchLoad:"_src"});
+		TouchSlide({slideCell:"#leftTabBox",effect:"leftLoop",titCell:".lefttabhd ul li",mainCell:".lefttabbd" });
+	</script>
+
+	<script type="text/javascript">
+	(function(angular) {
+	  'use strict';
+		var app=angular.module('swipe', [])
+		.controller('swipeCtrl', ['$scope', function ($scope) {
+			$scope.wyNewPic="wyNewPic.jpg";
+			$scope.title="[曝光台]景区票价被指假优惠";
+			$scope.conContent="峨眉山先涨35元再降20元;长假阶段前后而非当时优惠.";
+		}]);
+		app.controller('content', function($scope) {
+					$scope.items = [{
+						phone: "华为ASCEND P7",
+						price: "2000",
+						delete: "delete.png",
+						plus: "plus.png",
+						count: 1
+					}, {
+						phone: "Iphone 6 plus",
+						price: "5543",
+						delete: "delete.png",
+						plus: "plus.png",
+						count: 1
+					}];
+					$scope.deleteOne = function(item) {
+						if (item.count >= 1) {
+							item.count--;
+						}
+					}
+
+					$scope.totalCart = function() {
+			        var total = 0;
+			          total = total + $scope.items[0].price * $scope.items[0].count + $scope.items[1].price * $scope.items[1].count;
+			        
+			        return total;
+			      };
+
+				});
+	})(window.angular);
+	</script>
+    </body>
+</html>
